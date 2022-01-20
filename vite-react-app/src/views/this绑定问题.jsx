@@ -84,3 +84,32 @@ class App extends React.Component{
     console.log(this.state.message)
   }
 }
+
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      names: ['大猫er', '李猫er', '陈猫er']
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <a href="http://www.baidu.com" onClick={this.aClick}></a>
+        {
+          this.state.names.map((item, index) => {
+            return(
+              <a href="#" onClick={e => this.aClick(e, item, index)}>{item}</a>
+            )
+          })
+        }
+      </div>
+    )
+  }
+  aClick(e, item, index) {
+    e.preventDefault();
+    console.log(item, index);
+    console.log(e)
+  }
+}
