@@ -7,8 +7,10 @@ import {
 } from "react-router-dom";
 import routes from "./router";
 
+import Counter from "./views/Hooks/counter";
+
 function App() {
-  const [count, setCount] = useState(0)
+  /* const [count, setCount] = useState(0)
 
   return <Router>
     <Routes>
@@ -17,7 +19,8 @@ function App() {
         </Route>)
       }
     </Routes>
-  </Router>
+  </Router>*/
+    return <Counter/>
 }
 
 export default App
