@@ -8,6 +8,8 @@ import {
 import routes from "./router";
 
 import Counter from "./views/Hooks/counter";
+import CounterUseEffect from './views/Hooks/CounterUseEffect'
+import CounterUseState from './views/Hooks/counterUseState'
 
 function App() {
   /* const [count, setCount] = useState(0)
@@ -20,7 +22,9 @@ function App() {
       }
     </Routes>
   </Router>*/
-    return <Counter/>
+    // return <Counter/>
+    // return <CounterUseState/>
+    return <CounterUseEffect/>
 }
 
 export default App
